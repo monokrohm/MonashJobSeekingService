@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jssgui.gui.ControllerLogin">
+   <left>
+      <AnchorPane prefWidth="263.0" style="-fx-background-color: #F6F6F6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="185.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/monash-university-logo-transparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="149.0" text="Job Seeking Centre">
+               <font>
+                  <Font name="Roboto Condensed" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="900.0" prefWidth="1335.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane fx:id="paneSign" prefHeight="857.0" prefWidth="1335.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Pane layoutX="1074.0" prefHeight="857.0" prefWidth="263.0" style="-fx-background-color: #F6F6F6;" />
+                  <Button fx:id="buttonR" layoutX="739.0" layoutY="466.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Recruiter" />
+                  <Button fx:id="buttonJ" layoutX="212.0" layoutY="466.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Job Seeker" />
+                  <Label layoutX="273.0" layoutY="242.0" text="Are you a Job Seeker or a Recruiter?" textFill="#006dae">
+                     <font>
+                        <Font name="Roboto Condensed" size="37.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+            <AnchorPane fx:id="login" prefHeight="857.0" prefWidth="1335.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Label alignment="CENTER" layoutX="476.0" layoutY="169.0" text="Sign In" textFill="#006dae">
+                     <font>
+                        <Font name="Roboto Condensed" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="345.0" layoutY="218.0" prefHeight="38.0" text="Find your next job with Monash Job Seeking Centre" textFill="#006dae">
+                     <font>
+                        <Font name="Roboto Condensed" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="384.0" layoutY="312.0" prefHeight="23.0" prefWidth="67.0" text="Username" textFill="#006dae">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="382.0" layoutY="368.0" text="Password" textFill="#006dae">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="userID" layoutX="384.0" layoutY="335.0" prefHeight="25.0" prefWidth="295.0" promptText="Enter your username" />
+                  <PasswordField fx:id="passID" layoutX="384.0" layoutY="395.0" prefHeight="25.0" prefWidth="296.0" promptText="Enter your password" />
+                  <Button fx:id="buttonLogin" layoutX="411.0" layoutY="489.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="242.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Log In" textFill="WHITE" />
+                  <Button layoutX="411.0" layoutY="539.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="242.0" styleClass="buttonWhite" stylesheets="@Style.css" text="Log In with Google">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../icons/icons8_google_480px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <CheckBox layoutX="384.0" layoutY="438.0" mnemonicParsing="false" text="Remember Me" textFill="#006dae" />
+                  <Hyperlink layoutX="549.0" layoutY="435.0" text="Forgot your password?" textFill="#0095c8" underline="true" />
+                  <Label layoutX="445.0" layoutY="620.0" text="Don't have an account?" textFill="#006dae" />
+                  <Hyperlink fx:id="buttonSign" layoutX="575.0" layoutY="617.0" text="Sign Up" textFill="#0095c8" underline="true" />
+                  <Label fx:id="labelWrong" alignment="CENTER" layoutX="382.0" layoutY="294.0" textAlignment="CENTER" textFill="RED" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="43.0" prefWidth="1600.0" style="-fx-background-color: #323232;" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

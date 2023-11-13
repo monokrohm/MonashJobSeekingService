@@ -1,0 +1,95 @@
+.button{
+    -fx-background-color: #F6F6F6;
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-background-color: #D7D7D7;
+}
+
+.button2{
+    -fx-background-color: #FAFAFA;
+    -fx-cursor: hand;
+}
+.button2:hover {
+    -fx-background-color: #D7D7D7;
+}
+
+.buttonBlue{
+    -fx-background-color: #0095C8;
+    -fx-text-fill: #FFFFFF;
+}
+.buttonBlue:hover{
+    -fx-background-color: #30A9D2;
+}
+
+.buttonWhite{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #0095C8;
+}
+.buttonWhite:hover{
+    -fx-background-color: #F6F6F6;
+}
+
+.buttonWhiteRound{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 35em;
+    -fx-min-width: 37px;
+    -fx-min-height: 36px;
+    -fx-max-width: 37px;
+    -fx-max-height: 36px;
+}
+.buttonWhiteRound:hover{
+    -fx-background-color: #E6E6E6;
+}
+
+.scrollPaneWhite{
+    -fx-background: #FFFFFF;
+    -fx-background-color: #FFFFFF;
+    -fx-focus-traversable: false;
+}
+
+.scrollPaneWhite:focused{
+    -fx-background-color: transparent;
+}
+
+.tAreaMessageTransparent{
+    -fx-background-color: #FFFFFF;
+}
+
+.tAreaMessageTransparent:focused .content{
+    -fx-background-color: #FFFFFF;
+    -fx-background: transparent;
+}
+
+.tfieldLabels{
+    -fx-text-fill: #A1A1A3;
+    -fx-font-size: 17.0;
+}
+
+.tfieldLabels14{
+    -fx-text-fill: #A1A1A3;
+    -fx-font-size: 14.0;
+}
+
+.tfieldMessageTransparent{
+    -fx-background-color: transparent;
+    -fx-text-box-border: transparent;
+}
+
+.tfieldMessageTransparent:focused{
+    -fx-background-color: transparent;
+}
+
+.tfieldJobTransparentUnderline{
+    -fx-background-color: transparent;
+    -fx-text-box-border: transparent;
+    -fx-padding: 0px;
+}
+
+.tfieldJobTransparentUnderline .text{
+    -fx-underline: true;
+}
+
+.tfieldJobTransparentUnderline:focused{
+    -fx-background-color: transparent;
+}

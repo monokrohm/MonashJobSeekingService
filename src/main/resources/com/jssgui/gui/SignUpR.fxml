@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jssgui.gui.ControllerSignup">
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="263.0" style="-fx-background-color: #F6F6F6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="164.0" fitWidth="185.0" layoutX="50.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icons/monash-university-logo-transparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="149.0" text="Job Seeking Centre">
+               <font>
+                  <Font name="Roboto Condensed" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="43.0" prefWidth="1600.0" style="-fx-background-color: #323232;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="263.0" style="-fx-background-color: #F6F6F6;" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <ScrollPane fx:id="scrollSign" prefHeight="200.0" prefWidth="200.0" styleClass="scrollPaneWhite" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <content>
+            <Pane prefHeight="1550.0" prefWidth="1057.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <Label layoutX="154.0" layoutY="68.0" text="Personal Details" textFill="#006dae">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="154.0" layoutY="119.0" prefHeight="717.0" prefWidth="751.0">
+                     <children>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="First Name" />
+                                    <TextField fx:id="tfFirst">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Last Name">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tfLast">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Username">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfUser" />
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Password" />
+                                    <PasswordField fx:id="tfPass">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </PasswordField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Confirm Password">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <PasswordField fx:id="tfPassConfirm">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </PasswordField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Email">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tfEmail">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Date of Birth">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <DatePicker fx:id="datePickerDob" prefHeight="25.0" prefWidth="376.0" promptText="Select Date of Birth">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Contact Number">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfContact" />
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Address">
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfAddress">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <GridPane prefHeight="0.0" prefWidth="751.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="City" />
+                                    <TextField fx:id="tfCity">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="0.0" prefWidth="376.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="State">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboState" prefHeight="25.0" prefWidth="367.0" promptText="Select State">
+                                       <opaqueInsets>
+                                          <Insets />
+                                       </opaqueInsets>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane prefHeight="11.0" prefWidth="751.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Postcode" />
+                                    <TextField fx:id="tfPost">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Country">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tfCountry" disable="true" text="Australia">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Highest Level of Education" />
+                                    <TextField fx:id="tfEdu" promptText="Optional">
+                                       <VBox.margin>
+                                          <Insets right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Year of Completion">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tfCompletion" promptText="YYYY">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Skills">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfSkills" promptText="Optional. Separate each skill with a comma(,)." />
+                     </children>
+                  </VBox>
+                  <Label layoutX="154.0" layoutY="901.0" text="Company Details" textFill="#006dae">
+                     <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                     </font>
+                  </Label>
+                  <VBox layoutX="154.0" layoutY="952.0" prefHeight="500.0" prefWidth="751.0">
+                     <children>
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Company Name">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfCompany" />
+                        <Label layoutX="10.0" layoutY="80.0" styleClass="tfieldLabels" stylesheets="@Style.css" text="Email">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfCompEmail" layoutX="10.0" layoutY="106.0" />
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Contact Number">
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfCompNo" />
+                        <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Address">
+                           <VBox.margin>
+                              <Insets top="18.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tfCompAddress">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <GridPane prefHeight="0.0" prefWidth="751.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="City" />
+                                    <TextField fx:id="tfCompCity">
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="0.0" prefWidth="376.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="State">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <ComboBox fx:id="comboCompState" prefWidth="326.0" promptText="Select Company State">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </ComboBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane prefHeight="11.0" prefWidth="751.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                           </rowConstraints>
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Postcode" />
+                                    <TextField fx:id="tfCompPost">
+                                       <VBox.margin>
+                                          <Insets right="50.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <Label styleClass="tfieldLabels" stylesheets="@Style.css" text="Country">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <TextField fx:id="tfCompCountry" disable="true" text="Australia">
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </GridPane>
+                     </children>
+                  </VBox>
+                  <Button fx:id="buttonSubmit" layoutX="781.0" layoutY="1442.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Submit" />
+                  <Button fx:id="buttonCancel" layoutX="634.0" layoutY="1442.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Cancel" />
+                  <Label fx:id="userError" layoutX="154.0" layoutY="181.0" textFill="RED" />
+                  <Label fx:id="blankError" layoutX="154.0" layoutY="253.0" textFill="RED" />
+               </children>
+            </Pane>
+         </content></ScrollPane>
+   </center>
+</BorderPane>

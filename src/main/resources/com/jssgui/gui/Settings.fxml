@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1337.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jssgui.gui.ControllerSettings">
+   <children>
+      <Button fx:id="test" layoutX="479.0" layoutY="233.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Test" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1600.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jssgui.gui.ControllerDash">
+    <left>
+        <AnchorPane prefWidth="263.0" style="-fx-background-color: #F6F6F6;" BorderPane.alignment="CENTER">
+            <children>
+                <VBox layoutY="85.0" prefHeight="517.0" prefWidth="263.0">
+                    <children>
+                        <Button fx:id="buttonDash" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="264.0" stylesheets="@Style.css" text="Dashboard" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="21.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/web-design%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="70.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="buttonProfile" alignment="BASELINE_LEFT" graphicTextGap="15.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="264.0" stylesheets="@Style.css" text="Profile" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="21.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/icons8_contacts_512px%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="70.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="buttonJobs" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="264.0" stylesheets="@Style.css" text="Bookmarks" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="21.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/hand-holding-dollar%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="70.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="buttonCandidates" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="264.0" stylesheets="@Style.css" text="Applications" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="21.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/conference-background-selected%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="70.0" />
+                            </padding>
+                        </Button>
+                        <Button fx:id="buttonSettings" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="264.0" stylesheets="@Style.css" text="Settings" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="21.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/icons8_settings_512px%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets left="70.0" />
+                            </padding>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </VBox>
+                <Button fx:id="buttonLogout" layoutY="593.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="64.0" prefWidth="263.0" stylesheets="@Style.css" text="Logout" textFill="#006dae">
+                    <font>
+                        <Font name="Roboto Condensed" size="21.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </left>
+    <bottom>
+        <AnchorPane prefHeight="43.0" prefWidth="1600.0" style="-fx-background-color: #323232;" BorderPane.alignment="CENTER" />
+    </bottom>
+    <center>
+        <AnchorPane prefWidth="1337.0" BorderPane.alignment="CENTER" />
+    </center>
+   <top>
+      <AnchorPane prefHeight="198.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="1558.0" prefHeight="103.0" prefWidth="43.0" style="-fx-background-color: #F6F6F6;" />
+                <Pane layoutX="263.0" layoutY="103.0" prefHeight="95.0" prefWidth="1340.0" style="-fx-background-color: #006dae;">
+                    <children>
+                        <Label fx:id="labelHeader" layoutY="26.0" text="Dashboard" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Condensed" size="36.0" />
+                            </font>
+                            <padding>
+                                <Insets left="53.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </Pane>
+                <HBox alignment="CENTER_LEFT" layoutX="1169.0" layoutY="23.0" prefHeight="51.0" prefWidth="427.0">
+                    <children>
+                        <Button fx:id="buttonSearch" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="51.0" prefWidth="43.0" styleClass="buttonWhiteRound" stylesheets="@Style.css">
+                            <graphic>
+                                <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/icons8_search_512px%20copy1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonChat" mnemonicParsing="false" onAction="#dashPress" prefHeight="51.0" prefWidth="58.0" styleClass="buttonWhiteRound" stylesheets="@Style.css">
+                            <graphic>
+                                <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/chat--v1%20copy1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonInbox" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="51.0" prefWidth="58.0" styleClass="buttonWhiteRound" stylesheets="@Style.css">
+                            <graphic>
+                                <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/icons8_Gmail_Logo_512px%20copy1.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonTopProfile" layoutX="68.0" layoutY="10.0" mnemonicParsing="false" onAction="#dashPress" prefHeight="51.0" prefWidth="53.0" styleClass="buttonWhiteRound" stylesheets="@Style.css">
+                            <graphic>
+                                <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../icons/png-transparent-microsoft-account-msn-google-account-windows-10-microsoft-text-trademark-account-thumbnail%20copy.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <HBox.margin>
+                                <Insets left="10.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Label fx:id="labelName" prefHeight="29.0" prefWidth="185.0" textFill="#006dae">
+                            <font>
+                                <Font name="Roboto Condensed" size="23.0" />
+                            </font>
+                     <HBox.margin>
+                        <Insets left="12.0" />
+                     </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            <Pane prefHeight="199.0" prefWidth="263.0" style="-fx-background-color: #F6F6F6;">
+               <children>
+                      <ImageView fitHeight="164.0" fitWidth="185.0" layoutX="51.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../../../icons/monash-university-logo-transparent.png" />
+                          </image>
+                      </ImageView>
+                      <Label layoutX="87.0" layoutY="149.0" text="Job Seeking Centre">
+                          <font>
+                              <Font name="Roboto Condensed" size="12.0" />
+                          </font>
+                      </Label>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="172.0" prefHeight="27.0" prefWidth="182.0" text="Job Seeker" textFill="#006dae">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <HBox layoutX="302.0" prefHeight="100.0" prefWidth="865.0">
+               <children>
+                      <TextField fx:id="searchBar" prefHeight="25.0" prefWidth="341.0" promptText="Search Keywords">
+                     <HBox.margin>
+                        <Insets top="37.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ComboBox fx:id="comboLocation" onAction="#handleLocation" prefWidth="150.0" promptText="Location">
+                     <HBox.margin>
+                        <Insets left="18.0" top="37.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comboCategory" onAction="#handleCategory" prefWidth="150.0" promptText="Category">
+                     <HBox.margin>
+                        <Insets left="18.0" top="37.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comboSalary" onAction="#handleSalary" prefWidth="150.0" promptText="Salary Range">
+                     <HBox.margin>
+                        <Insets left="18.0" top="37.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

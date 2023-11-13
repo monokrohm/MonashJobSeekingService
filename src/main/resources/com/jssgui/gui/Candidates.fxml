@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderCandidates" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1337.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jssgui.gui.ControllerCandidates">
+    <center>
+        <AnchorPane prefHeight="682.0" prefWidth="1014.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+            <VBox layoutY="92.0" prefHeight="485.0" prefWidth="976.0">
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelAppNameHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Name:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="labelAppUsernameHead" layoutX="35.0" layoutY="25.0" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Username:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="442.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelAppName1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelAppUsername" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelAppEmailHead" layoutX="35.0" layoutY="25.0" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Email:" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelAppEmail">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefWidth="971.0">
+                     <children>
+                        <Label fx:id="labelAppContactHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Contact No.:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelAppDobHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Date of Birth:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="405.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelAppContact" prefWidth="91.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelAppDob" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelAppAddressHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Address:" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelAppAddress" layoutX="35.0" layoutY="101.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelAppCityHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="City:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelAppStateHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="State:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="455.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelAppCity">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelAppState" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelAppPostHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Postcode:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelAppCountryHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Country:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="422.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelAppPost">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelAppCountry" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelAppEduHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Highest Level of Education:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelAppGradHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Year of Completion:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="315.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelAppEdu">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelAppGrad" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelAppSkillsHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Skills:" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelAppSkills" layoutX="35.0" layoutY="191.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+                <Pane layoutY="2.0" prefHeight="88.0" prefWidth="1014.0" style="-fx-background-color: #F6F6F6;">
+                    <children>
+                        <Label fx:id="labelAppName" blendMode="MULTIPLY" layoutX="25.0" layoutY="22.0" style="-fx-background-color: #F6F6F6;" underline="true">
+                            <font>
+                                <Font size="16.0" />
+                            </font></Label>
+                        <Label fx:id="labelAppJob" blendMode="MULTIPLY" layoutX="25.0" layoutY="54.0" style="-fx-background-color: #F6F6F6;" underline="true" />
+                        <Separator fx:id="dividerApp" layoutX="11.0" layoutY="45.0" prefHeight="0.0" prefWidth="992.0" />
+                        <Button fx:id="buttonInvite" layoutX="810.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Invite To Interview" visible="false" />
+                  <Button fx:id="buttonReject" layoutX="673.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Reject" visible="false" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="3.0" prefWidth="1014.0" style="-fx-background-color: #006dae;" />
+                <Pane prefHeight="597.0" prefWidth="1.5" style="-fx-background-color: #006dae;" />
+            </children></AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="1337.0" BorderPane.alignment="CENTER">
+            <children>
+            <Button fx:id="buttonApplications" layoutX="1132.0" layoutY="22.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Job Applications" />
+                <Label layoutX="50.0" layoutY="22.0" text="Job Candidates" textFill="#006dae">
+                    <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="323.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane layoutY="49.0" prefHeight="548.0" prefWidth="323.0" styleClass="scrollPaneWhite" stylesheets="@Style.css">
+                    <content>
+                        <VBox fx:id="vboxApplicants" prefWidth="306.0" style="-fx-background-color: #FFFFFF;" />
+                    </content>
+                </ScrollPane>
+                <Pane prefHeight="50.0" prefWidth="323.0" style="-fx-background-color: #006dae;">
+                    <children>
+                        <Label layoutX="50.0" layoutY="10.0" text="Applicants" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Condensed" size="25.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>

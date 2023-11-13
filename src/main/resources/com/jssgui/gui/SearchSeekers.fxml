@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="dashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="657.0" prefWidth="1337.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <center>
+        <AnchorPane prefHeight="682.0" prefWidth="1014.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+            <children>
+            <VBox layoutY="92.0" prefHeight="485.0" prefWidth="976.0">
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelSeekerNameHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Name:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" top="15.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelSeekerName1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelSeekerEmailHead" layoutX="35.0" layoutY="25.0" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Email:" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelSeekerEmail">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox prefWidth="971.0">
+                     <children>
+                        <Label fx:id="labelSeekerContactHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Contact No.:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelSeekerDobHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Date of Birth:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="405.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane layoutX="10.0" layoutY="200.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="labelSeekerContact">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelSeekerDob" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelSeekerAddressHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Address:" visible="false">
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelSeekerAddress">
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelSeekerCityHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="City:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelSeekerStateHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="State:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="455.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelSeekerCity">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelSeekerState" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                   <HBox prefWidth="200.0">
+                       <children>
+                           <Label fx:id="labelSeekerPostHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Postcode:" visible="false">
+                               <font>
+                                   <Font size="14.0" />
+                               </font>
+                           </Label>
+                           <Label fx:id="labelSeekerCountryHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Country:" visible="false">
+                               <font>
+                                   <Font size="14.0" />
+                               </font>
+                               <HBox.margin>
+                                   <Insets left="422.0" />
+                               </HBox.margin>
+                           </Label>
+                       </children>
+                       <VBox.margin>
+                           <Insets left="25.0" top="15.0" />
+                       </VBox.margin>
+                   </HBox>
+                   <GridPane>
+                       <columnConstraints>
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                       </columnConstraints>
+                       <rowConstraints>
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                       </rowConstraints>
+                       <children>
+                           <Label fx:id="labelSeekerPost">
+                               <font>
+                                   <Font size="14.0" />
+                               </font>
+                               <GridPane.margin>
+                                   <Insets left="25.0" />
+                               </GridPane.margin>
+                           </Label>
+                           <Label fx:id="labelSeekerCountry" GridPane.columnIndex="1">
+                               <font>
+                                   <Font size="14.0" />
+                               </font>
+                               <GridPane.margin>
+                                   <Insets left="19.0" />
+                               </GridPane.margin>
+                           </Label>
+                       </children>
+                   </GridPane>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelSeekerEduHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Highest Level of Education:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="labelSeekerGradHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Year of Completion:" visible="false">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="315.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="labelSeekerEdu">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="25.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="labelSeekerGrad" GridPane.columnIndex="1">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="19.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="labelSeekerSkillsHead" styleClass="tfieldLabels14" stylesheets="@Style.css" text="Skills:" visible="false">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="labelSeekerSkills" layoutX="35.0" layoutY="191.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="25.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+                <Pane layoutY="2.0" prefHeight="88.0" prefWidth="1014.0" style="-fx-background-color: #F6F6F6;">
+                    <children>
+                        <Label fx:id="labelSeekerName" blendMode="MULTIPLY" layoutX="25.0" layoutY="22.0" style="-fx-background-color: #F6F6F6;" underline="true">
+                            <font>
+                                <Font size="16.0" />
+                            </font></Label>
+                  <Label fx:id="labelSeekerUsername" blendMode="MULTIPLY" layoutX="25.0" layoutY="54.0" style="-fx-background-color: #F6F6F6;" underline="true" />
+                        <Separator fx:id="dividerSeeker" layoutX="11.0" layoutY="45.0" prefHeight="0.0" prefWidth="992.0" />
+                  <Button fx:id="buttonMessage" layoutX="810.0" layoutY="30.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="buttonBlue" stylesheets="@Style.css" text="Message" visible="false" />
+                    </children>
+                </Pane>
+                <Pane prefHeight="3.0" prefWidth="1014.0" style="-fx-background-color: #006dae;" />
+                <Pane prefHeight="597.0" prefWidth="1.5" style="-fx-background-color: #006dae;" />
+            </children></AnchorPane>
+    </center>
+    <top>
+        <AnchorPane prefHeight="60.0" prefWidth="1337.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="50.0" layoutY="22.0" text="Search Results" textFill="#006dae">
+                    <font>
+                        <Font name="Roboto Condensed" size="25.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </top>
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="323.0" BorderPane.alignment="CENTER">
+            <children>
+                <ScrollPane layoutY="49.0" prefHeight="548.0" prefWidth="323.0" styleClass="scrollPaneWhite" stylesheets="@Style.css">
+                    <content>
+                        <VBox fx:id="vboxSeekers" prefWidth="306.0" style="-fx-background-color: #FFFFFF;" />
+                    </content>
+                </ScrollPane>
+                <Pane prefHeight="50.0" prefWidth="323.0" style="-fx-background-color: #006dae;">
+                    <children>
+                        <Label layoutX="50.0" layoutY="10.0" text="Job Seekers" textFill="WHITE">
+                            <font>
+                                <Font name="Roboto Condensed" size="25.0" />
+                            </font>
+                        </Label>
+                    </children></Pane>
+            </children>
+        </AnchorPane>
+    </left>
+</BorderPane>
