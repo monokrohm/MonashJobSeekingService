@@ -6,13 +6,19 @@ User/PW: jdoe/123<br />
 - Profile page now displays user details<br />
 
 Install MySQL Workbench/Server/Shell with MySQL Installer<br />
-Check/Update DBConnection class if necessary<br />
 
-Import/Export DB<br />
+Import DB<br />
 Navigator -> Administration Tab -> Data Import/Restore -> Import the Dump.sql<br />
 
-Notes:<br />
-https://www.logicbig.com/how-to/intellij/intellij-community-edition-connecting-database.html 
+IntelliJ Community Edition DB Setup <br />
+https://www.logicbig.com/how-to/intellij/intellij-community-edition-connecting-database.html <br />
+
+Import Dependency<br />
+File -> Project Structure -> Add -> JARs or Directories<br />
+https://downloads.mysql.com/archives/c-j/ <br />
+https://dev.mysql.com/downloads/connector/j/ <br />
+
+Check/Update DBConnection class if necessary<br />
 
 ---
 v1.0<br />
@@ -24,7 +30,7 @@ JavaFx Library<br />
 https://gluonhq.com/products/javafx/
 
 # Monash-2022-ITO5136-Software-Engineering
-This project aims to develop a job seeking system. And this job seeking system (JSS) is designed to enhance job search results for both job seekers and recruiters
+This project aims to develop a job seeking system(JSS) designed to enhance job search results for both job seekers and recruiters
 
 JSS provides the following types of management: <br />
 
